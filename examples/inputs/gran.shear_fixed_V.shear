@@ -1,0 +1,28 @@
+# title
+title restart1000
+
+# time steps and output frequencies
+nstep   1000
+iprint  10
+iprintf 2
+
+# general
+mx 48
+my 48
+dt 0.1
+
+# wall just at above and bottom
+ib 0  2  -1  -1
+fb 0.0  1.0e-3  0.  0.
+
+# external force
+presy 1.00e-5
+
+# fluid
+#ifluid 0
+#permfac 1e-5
+
+# generate jpeg
+#igif
+jpeg_resolution 900
+

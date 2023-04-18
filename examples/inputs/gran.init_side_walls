@@ -1,0 +1,37 @@
+# title
+title init
+
+# time steps and frequent output
+nstep   1000
+iprint  10
+iprintf 2
+iprint_restart 100
+
+# box size
+boxx 24
+boxy 30
+w_offset 2
+# final y box size
+boxfy 24
+mx 12
+my 12
+
+# target porosity
+phigoal 0.2
+
+irstart 0
+ifill -1
+
+# walls
+# ib 0 0 -1 -1
+ib 0 0 0 0
+
+# external force
+presy 1.0e-5
+
+# gravity
+gy -1.0e-5
+
+# generate jpeg
+# igif
+
