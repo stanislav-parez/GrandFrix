@@ -1,6 +1,15 @@
 # GranFrix
 
 Fortran 90 program for granular + fluid simulations, using DEM + fluid solver.
+The code has been developed over several decades by many scientists including:
+David Sparks, Einat Aharonov, Liran Goren, Stanislav Parez, Martin Svoboda
+
+When using the code, please cite the following publications, describing its functionality:
+1. Einat Aharonov and David Sparks. Rigidity phase transition in granular packings. Physical Review E, 60(6):6890, 1999.
+2. Einat Aharonov and David Sparks. Stick-slip motion in simulated granular layers. Journal of Geophysical Research: Solid Earth, 109(B9), 2004.
+3. Liran Goren, Einat Aharonov, David Sparks, and Renaud Toussaint. The mechanical coupling of fluid-filled granular material under shear. Pure and Applied Geophysics, 168(12):2289–2323, 2011.
+4. Stanislav Parez, Einat Aharonov, and Renaud Toussaint. Unsteady granular flows down an inclined plane. Phys. Rev. E, 93:042902, 2016. 
+5. Stanislav Parez, Tereza Travnickova, Martin Svoboda, and Einat Aharonov. Strain localization in planar shear of granular media: the role of porosity and boundary conditions. The European Physical Journal E, 44(11):1–17, 2021.
 
 ## How to install
 
@@ -23,7 +32,7 @@ Exe file is now in bin directory.
 `GranFrixrm < {inputFile}`
 
 ## Input file
-Input file is a list of settings in the form `variable value`. Default values of variables can be found in _./src/inputReader.f90_. and _./src/mycommons.f90_.
+Input file is a list of settings in the form `variable value`. Default values of variables can be found in _./src/inputReader.f90_ and _./src/mycommons.f90_.
 Lines starting with `#` are interpreted as comments. For example input files see _./examples/_.
 Units used in the inputs as well as output files are non-dimensional, such that diameter and mass of a mean-size grain are both 1, and Young's modulus of a grain is 1.
 
